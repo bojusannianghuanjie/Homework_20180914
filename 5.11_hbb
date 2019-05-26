@@ -1,0 +1,43 @@
+#任务4
+for i in range(1,101):
+    if i%3==0 and i%5!=0:
+        print('Fizz')
+        continue
+    if i%3!=0 and i%5==0:
+        print('Buzz')
+        continue
+    if i % 3 == 0 and i % 5 == 0:
+        print('FizzBuzz')
+        continue
+    else:
+        print(i)
+#任务5
+def fizz_count(x):
+    count=0
+    for word in x:
+        if word=='Fizz':
+            count=count+1
+    return count
+list2=[]
+for i in range(1,101):
+    if i%3==0 and i%5!=0:
+        list2.append('Fizz')
+        continue
+    if i%3!=0 and i%5==0:
+        list2.append('Buzz')
+        continue
+    if i % 3 == 0 and i % 5 == 0:
+        list2.append('FizzBuzz')
+        continue
+    else:
+        list2.append(i)
+print(list2)
+print(fizz_count(list2))
+
+#任务6
+for letter in 'testup测试进阶':
+    print(letter)
+word='Programming is fun!'
+for letter in word:
+    if letter=='i':
+        print(letter)
